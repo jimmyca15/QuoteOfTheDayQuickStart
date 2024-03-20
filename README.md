@@ -54,12 +54,6 @@ builder.Configuration
     });
 ```
 
-If your feature flag uses a `label`, you'll need to explicitly request that label here
-
-```
-.UseFeatureFlags(featureFlagOptions => featureFlagOptions.Label = "foo");
-```
-
 6.
 
 In `Program.cs` add the following using statements:
