@@ -19,8 +19,19 @@ In cmd run
 
 `dotnet new razor --auth Individual -o QuoteOfTheDay`
 
-
 2. 
+
+In cmd, navigate to the `QuoteOfTheDay` folder and run
+
+`dotnet user-secrets set ConnectionStrings:AppConfiguration "<App Configuration Connection string>"`
+
+3.
+
+Next, run
+
+`dotnet user-secrets set ConnectionStrings:AppInsights "<App Insights Connection string>"`
+
+4.
 
 In QuoteOfTheDay.csproj add
 
@@ -30,18 +41,6 @@ In QuoteOfTheDay.csproj add
 <PackageReference Include="Microsoft.FeatureManagement.Telemetry.ApplicationInsights.AspNetCore" Version="4.0.0-preview2" />
 <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="4.0.0-preview2" />
 ```
-
-3.
-
-In cmd, navigate to the `QuoteOfTheDay` folder and run
-
-`dotnet user-secrets set ConnectionStrings:AppConfiguration "<App Configuration Connection string>"`
-
-4.
-
-Next, run
-
-`dotnet user-secrets set ConnectionStrings:AppInsights "<App Insights Connection string>"`
 
 5.
 
